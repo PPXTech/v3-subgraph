@@ -51,7 +51,7 @@ export function getEthPriceInUSD(): BigDecimal {
  * Search through graph to find derived Eth per token.
  * @todo update to be derived ETH (add stablecoin estimates)
  **/
-export function findCorePerToken(token: Token): BigDecimal {
+export function findEthPerToken(token: Token): BigDecimal {
   if (token.id == WCORE_ADDRESS) {
     return ONE_BD
   }
