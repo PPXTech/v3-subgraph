@@ -4,22 +4,20 @@ import { Bundle, Pool, Token } from './../types/schema'
 import { BigDecimal, BigInt } from '@graphprotocol/graph-ts'
 import { exponentToBigDecimal, safeDiv } from '../utils/index'
 
-const WCORE_ADDRESS = '0xeEFc44237354771fEb09Aa0a18A85eD536F15184'
-const USDC_WCORE_03_POOL = '0xC4741661F610687Fe410e61E745f62005bd552F5'
+const WCORE_ADDRESS = '0xeefc44237354771feb09aa0a18a85ed536f15184'
+const USDC_WCORE_03_POOL = '0xc4741661f610687fe410e61e745f62005bd552f5'
 
 // token where amounts should contribute to tracked volume and liquidity
 // usually tokens that many tokens are paired with s
 export let WHITELIST_TOKENS: string[] = [
   WCORE_ADDRESS,
   '0x5700aff131756461537420e8f434d9f43ef97c48', // USDT
-  '0x65A8173c48B49a1320cc4513DCD4792e315fE2b1', // USDC
-  '0x99d8eca506c1beae30d762b18c280d4b7aab9e7e' // DAI
+  '0x65a8173c48b49a1320cc4513dcd4792e315fe2b1' // USDC
 ]
 
 let STABLE_COINS: string[] = [
   '0x5700aff131756461537420e8f434d9f43ef97c48', // USDT
-  '0x65A8173c48B49a1320cc4513DCD4792e315fE2b1', // USDC
-  '0x99d8eca506c1beae30d762b18c280d4b7aab9e7e' // DAI
+  '0x65a8173c48b49a1320cc4513dcd4792e315fe2b1' // USDC
 ]
 
 let MINIMUM_ETH_LOCKED = BigDecimal.fromString('0')

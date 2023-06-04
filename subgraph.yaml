@@ -11,7 +11,7 @@ features:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: core # update
+    network: mainnet # update
     source:
       address: '0xDC85934D7045bd99e7a422487efF64f7F25603A9' # update
       abi: Factory
@@ -40,7 +40,7 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: core # update
+    network: mainnet # update
     source:
       address: '0x844E58fb2487Acedae0300f6170499B60A2a835f' # update
       abi: NonfungiblePositionManager
@@ -74,7 +74,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: core # update
+    network: mainnet # update
     source:
       abi: Pool
     mapping:
